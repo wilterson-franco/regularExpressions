@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'eclipse'
+}
+
+/**
+ * Change these variables according to what you have inputed to "gradle init" command
+ */
+def myProjectName = 'regularExpressions'
+def myProjectVersion = '0.1.0'
+def myPackageName = 'com.wilterson'
+
+repositories {
+    jcenter()
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:27.0.1-jre'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+
+    testImplementation 'org.hamcrest:hamcrest-library:1.3'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+mainClassName = myPackageName + ".app"

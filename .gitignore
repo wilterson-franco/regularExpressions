@@ -1,0 +1,24 @@
+#HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### VS Code ###
+.vscode/
+
+### MISC ###
+h2.mv.db
+delEclipseData.sh
+bin/
+.attach_pid*
